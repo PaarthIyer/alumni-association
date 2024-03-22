@@ -4,18 +4,17 @@
 
     let isOpen = false
     let innerWidth = 0
-    let dropOpacity = 45
+    export let absolute = true
 
     function closeDrop() {
         isOpen = false
     }
 
     $: isOpen = innerWidth >= 640 ? false : isOpen
-    $: dropOpacity = isOpen ? 80 : 45
 </script>
 
 <svelte:window bind:innerWidth />
-<div class="absolute z-10 flex w-full flex-col bg-black bg-opacity-{dropOpacity} text-white">
+<div class="{absolute ? "absolute" : ""} z-10 flex w-full flex-col bg-black bg-opacity-45 text-white">
     <div class="m-auto flex w-full max-w-screen-lg px-4 py-3 tracking-wider sm:py-4">
         <div class="flex-1">
             <a href="/">

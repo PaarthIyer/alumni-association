@@ -1,5 +1,6 @@
 <script>
     import HomeIcon from '$src/lib/components/HomeIcon.svelte'
+    import Navbar from '$src/lib/components/Navbar.svelte'
 
     function scrollUEvents() {
         const el = document.querySelector('#UpcomingEvents')
@@ -9,6 +10,8 @@
         })
     }
 </script>
+
+<Navbar />
 
 <div class="bg-image h-[70vh] w-full sm:h-[100vh]">
     <div class="flex h-full flex-col items-center justify-center">

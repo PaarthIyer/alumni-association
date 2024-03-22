@@ -3,6 +3,5 @@
     import Navbar from '$src/lib/components/Navbar.svelte'
 </script>
 
-<Navbar />
 
 <slot />
