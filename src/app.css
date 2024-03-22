@@ -4,6 +4,6 @@
 
 @layer components {
     .btn-blue {
-        @apply m-4 rounded bg-blue-500 px-4 py-2 font-bold text-white transition  duration-75 hover:bg-blue-700;
+        @apply m-4 rounded bg-blue-500 px-4 py-2 font-bold text-white transition duration-75 active:scale-90 hover:bg-blue-700;
     }
 }
