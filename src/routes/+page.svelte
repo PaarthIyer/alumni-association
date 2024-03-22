@@ -52,9 +52,10 @@
 
 <div class="mx-auto my-10 flex w-full max-w-screen-lg flex-col items-center px-4">
     <div
+        id="UpcomingEvents"
         class="my-4 text-center font-heading text-2xl font-bold text-primary sm:text-3xl md:text-4xl"
     >
-        <span class="underline decoration-4 underline-offset-[7px]">U</span>pcoming Event
+        <span class="underline decoration-4 underline-offset-[7px]">U</span>pcoming Events
     </div>
     <div class="my-5 max-w-screen-md border-primary p-5">
         <div class="pb-4 text-center text-xl font-semibold text-secondary sm:text-2xl md:text-3xl">
