@@ -43,14 +43,7 @@
     >
         <span class="underline decoration-4 underline-offset-[7px]">A</span>bout Us
     </div>
-    <div class="md:text-lg">
-        We are the Chennai Mathematical Instutute Alumni Association. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-        in culpa qui officia deserunt mollit anim id est laborum.
-    </div>
+    <div class="md:text-lg">Chennai Mathematical Instutute Alumni Association (CMIAA)</div>
 </div>
 
 <div class="mx-auto my-10 flex w-full max-w-screen-lg flex-col items-center px-4">
@@ -65,7 +58,7 @@
             The first distinguished CMIAA lecture
         </div>
         <div class="my-2 text-xl font-semibold sm:text-2xl md:text-3xl">
-            <span class="">Title of the talk</span>
+            <span class="">GenAI and entrepreneurship - how the world of demand is changing</span>
         </div>
         <div class="my-2 font-semibold md:text-xl">
             Ujjaini Mitra | <span class="font-normal">6th April, 2024</span>
@@ -77,9 +70,11 @@
             <img src="time-ico.svg" alt="time" class="mx-2 w-6" /> [time]
         </div>
         <div class="text-sm md:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            GenAI is reshaping the conversation in every board room. It is revolutionising
+            entrepreneurship by reshaping the economy of demand. With AI driven innovation,
+            businesses are anticipating a tectonic shift in the way they work. Even industries as
+            traditional as cement manufacturing or Newspaper printing are reimagining business. How
+            you can you grab that opportunity as an entrepreneur?
         </div>
     </div>
 </div>
