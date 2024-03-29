@@ -37,14 +37,14 @@
     </div>
 </div>
 
-<div class="mx-auto my-10 flex w-full max-w-screen-lg flex-col px-4">
+<!-- <div class="mx-auto my-10 flex w-full max-w-screen-lg flex-col px-4">
     <div
         class="my-4 text-center font-heading text-2xl font-bold text-primary sm:text-3xl md:text-4xl"
     >
         <span class="underline decoration-4 underline-offset-[7px]">A</span>bout Us
     </div>
     <div class="md:text-lg">Chennai Mathematical Instutute Alumni Association (CMIAA)</div>
-</div>
+</div> -->
 
 <div class="mx-auto my-10 flex w-full max-w-screen-lg flex-col items-center px-4">
     <div
@@ -64,10 +64,10 @@
             Ujjaini Mitra | <span class="font-normal">6th April, 2024</span>
         </div>
         <div class="my-3 flex font-medium md:text-lg">
-            <img src="venue-ico.svg" alt="venue" class="mx-2 w-6" /> [location]
+            <img src="venue-ico.svg" alt="venue" class="mx-2 w-6" /> Online
         </div>
         <div class="my-3 flex font-medium md:text-lg">
-            <img src="time-ico.svg" alt="time" class="mx-2 w-6" /> [time]
+            <img src="time-ico.svg" alt="time" class="mx-2 w-6" /> 5 PM
         </div>
         <div class="text-sm md:text-base">
             GenAI is reshaping the conversation in every board room. It is revolutionising
