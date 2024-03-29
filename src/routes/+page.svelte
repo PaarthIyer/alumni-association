@@ -25,7 +25,7 @@
         <div
             class="font-ubunt max-w-screen-md px-6 pt-3 text-center text-base font-medium text-neutral-content sm:px-4 sm:pt-8 sm:text-xl md:text-2xl"
         >
-            Learn more about the CMI alumnus and keep up with the events organized by the CMI Alumni
+            Get to know about the CMI alumni and keep up with the events organized by the CMI Alumni
             Association. <br />
             <a
                 href="#UpcomingEvents"
@@ -73,8 +73,8 @@
             GenAI is reshaping the conversation in every board room. It is revolutionising
             entrepreneurship by reshaping the economy of demand. With AI driven innovation,
             businesses are anticipating a tectonic shift in the way they work. Even industries as
-            traditional as cement manufacturing or Newspaper printing are reimagining business. How
-            you can you grab that opportunity as an entrepreneur?
+            traditional as cement manufacturing or newspaper printing are reimagining business. How
+            can you grab that opportunity as an entrepreneur?
         </div>
     </div>
 </div>
