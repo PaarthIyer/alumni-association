@@ -17,7 +17,7 @@
         >
             <a href="/">Home</a>
             <a href="/events">Events</a>
-            <a href="/contact">Contact Us</a>
+            <a href="/gallery">Gallery</a>
             <a class="border-text-white border-2 px-4" href="/alumni">Alumni Directory</a>
         </div>
         <!-- smaller screens -->
@@ -58,7 +58,7 @@
     >
         <a href="/">Home</a>
         <a href="/events">Events</a>
-        <a href="/contact">Contact Us</a>
+        <a href="/gallery">Gallery</a>
         <a class="mb-5" href="/alumni">Alumni Directory</a>
     </div>
     <!-- <div
