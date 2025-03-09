@@ -1,0 +1,37 @@
+[
+    {
+        "comment": "The first distinguished CMIAA lecture",
+        "title": "GenAI and entrepreneurship - how the world of demand is changing",
+        "presenter": "Ujjaini Mitra",
+        "time": "5 PM",
+        "location": "Online",
+        "date": "6th April, 2024",
+        "description": "GenAI is reshaping the conversation in every board room. It is revolutionising entrepreneurship by reshaping the economy of demand. With AI driven innovation, businesses are anticipating a tectonic shift in the way they work. Even industries as traditional as cement manufacturing or newspaper printing are reimagining business. How can you grab that opportunity as an entrepreneur?"
+    },
+    {
+        "comment": "Exploring the future of quantum computing",
+        "title": "Quantum Computing - Breaking the Barriers of Classical Systems",
+        "presenter": "Dr. Nathaniel Carter",
+        "time": "3 PM",
+        "location": "Harvard Innovation Lab",
+        "date": "15th March, 2024",
+        "description": "Quantum computing is no longer a distant dream. With advancements in quantum algorithms and hardware, industries are preparing for a computational revolution. This lecture delves into the latest breakthroughs, challenges, and real-world applications of quantum computing."
+    },
+    {
+        "title": "Neuroscience and AI - The Next Frontier",
+        "presenter": "Prof. Eleanor Richards",
+        "time": "11 AM",
+        "location": "Stanford AI Research Center",
+        "date": "22nd April, 2024",
+        "description": "Artificial intelligence is increasingly inspired by human cognition. This talk explores how neuroscience is influencing AI models, from brain-inspired architectures to real-world applications in healthcare and robotics."
+    },
+    {
+        "comment": "A deep dive into blockchain scalability",
+        "title": "Blockchain Beyond Bitcoin - Scalability and Real-World Adoption",
+        "presenter": "Aniket Sharma",
+        "time": "6 PM",
+        "location": "Online",
+        "date": "5th May, 2024",
+        "description": "Blockchain technology is evolving beyond cryptocurrencies. With emerging solutions like Layer 2 protocols and sharding, scalability is improving, enabling blockchain to revolutionize finance, supply chains, and beyond. This session provides insights into the latest developments."
+    }
+]
