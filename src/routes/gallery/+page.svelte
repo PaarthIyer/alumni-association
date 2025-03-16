@@ -26,7 +26,7 @@
 
 <div class="mx-5 my-10 text-center font-sans text-4xl md:text-6xl">CMIAA 2025 Meet</div>
 
-<div class="m-4">
+<div class="m-4 min-h-screen">
     {#if buckets.length > 0}
         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-10 lg:grid-cols-4">
             {#each buckets as bucket}
