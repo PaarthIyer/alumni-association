@@ -1,6 +1,7 @@
 <script>
     import EventCarousel from '$lib/components/home/EventCarousel.svelte'
     import Navbar from '$lib/components/Navbar.svelte'
+    import HomeIcon from '$lib/components/HomeIcon.svelte'
 
     let { data } = $props()
     const { upcoming_events } = data
@@ -9,7 +10,17 @@
 <Navbar />
 
 <!-- Hero -->
-<div class="bg-image h-[70vh] w-full sm:h-[100vh]"></div>
+<div class="bg-image flex h-[70vh] w-full bg-center sm:h-[100vh] md:bg-left">
+    <dic class="m-auto flex flex-col rounded-2xl bg-black/35 p-10 text-center">
+        <div class=" mb-6 max-w-lg text-2xl font-medium text-white">
+            Welcome to the official website of the
+        </div>
+        <HomeIcon cls="h-20 fill-white"></HomeIcon>
+        <div class=" mt-10 max-w-lg text-lg font-medium text-white">
+            scroll down to explore more
+        </div>
+    </dic>
+</div>
 
 <div class="bg-bg m-auto max-w-6xl py-10">
     <!-- About Us -->
@@ -76,7 +87,6 @@
             linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url('/cmi-front.png');
         background-color: rgb(0, 0, 0);
 
-        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
