@@ -1,13 +1,16 @@
 // See https://svelte.dev/docs/kit/types#app.d.ts
 // for information about these interfaces
 declare global {
-    interface Post {
+    interface EventListing {
+        comment?: string
         title: string
         slug: string
         description: string
         image?: string
         date: string
-        categories: string[]
+        location?: string
+        time?: string
+        presenter: string
         published: boolean
     }
     namespace App {
