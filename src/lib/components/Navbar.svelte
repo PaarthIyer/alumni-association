@@ -2,11 +2,15 @@
     import HomeIcon from './HomeIcon.svelte'
 
     let menuOpen = $state(false)
-    let { transparent = true } = $props()
+    let { transparent = true, spread = false } = $props()
 </script>
 
 <div class="{transparent ? 'absolute bg-black/45' : 'bg-primary'}  w-full text-white">
-    <div class=" z-10 mx-auto flex w-full max-w-6xl px-2 py-2 tracking-wider md:px-6">
+    <div
+        class=" z-10 mx-auto flex w-full {!spread
+            ? 'max-w-6xl'
+            : ''} px-2 py-2 tracking-wider md:px-6"
+    >
         <a class="flex-1" href="/">
             <HomeIcon
                 cls="hover:cursor-pointer fill-white hover:fill-blue-600 h-7 sm:h-9 m-2 transition-all duration-150"
