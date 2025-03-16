@@ -1,39 +1,42 @@
-<script>
-    import { onMount } from 'svelte'
-    import { supabase } from '$lib/supabaseClient'
-    import GalleryObject from './GalleryObject.svelte'
-
-    /**
-     * @type {string | any[]}
-     */
-    let buckets = []
-
-    async function fetchImageNames() {
-        const { data, error } = await supabase.storage
-            .from('CMIAA_2025_Gallery')
-            .list('CMIAA_2025_Gallery')
-        if (error) {
-            console.error('Error fetching buckets:', error)
-        } else {
-            buckets = data
-        }
+<script lang="ts">
+    import { formatDate } from '$lib/utils/dateUtil'
+    import galleriesData from './galleries.json'
+    let gallery: GalleryItem[] = Object.values(galleriesData).sort(
+        (a, b) => new Date(b.upload_date).getTime() - new Date(a.upload_date).getTime()
+    )
+    type GalleryItem = {
+        name: string
+        title: string
+        gallery: string
+        upload_date: string
+        image_link_prefix: string
     }
-
-    onMount(() => {
-        fetchImageNames()
-    })
 </script>
 
-<div class="mx-5 my-10 text-center font-sans text-4xl md:text-6xl">CMIAA 2025 Meet</div>
+<div class="bg-bg mx-auto max-w-6xl px-5 pt-5 pb-10">
+    <div
+        class=" text-primary font-ubuntu pb-5 text-center text-6xl font-bold sm:text-6xl md:text-7xl"
+    >
+        Galleries
+    </div>
 
-<div class="m-4">
-    {#if buckets.length > 0}
-        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-10 lg:grid-cols-4">
-            {#each buckets as bucket}
-                <GalleryObject filename={bucket.name}></GalleryObject>
-            {/each}
-        </div>
-    {:else}
-        <p>Loading images...</p>
-    {/if}
+    {#each gallery as post}
+        {@render gallery_listing(post)}
+    {/each}
 </div>
+
+{#snippet gallery_listing(post: GalleryItem)}
+    <a class="md:my-5" href="gallery/{post.name}">
+        <div
+            class="border-secondary/20 border-b-2 px-2 py-6 transition-all duration-200 hover:bg-black/10 md:p-5"
+        >
+            <div class="py-2 text-xl font-semibold sm:text-2xl md:text-3xl">
+                {post.title}
+            </div>
+
+            <div class="text-base md:text-lg">
+                Uploaded {formatDate(post.upload_date)}
+            </div>
+        </div>
+    </a>
+{/snippet}

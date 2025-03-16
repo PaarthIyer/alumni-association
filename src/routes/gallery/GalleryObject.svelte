@@ -1,15 +1,13 @@
 <script>
     // @ts-nocheck
 
-    export let filename = '' // The filename of the image to load
+    let { url_prefix, filename } = $props()
 
-    let imageUrl =
-        'https://jjsxgilfjuombykmbdxj.supabase.co/storage/v1/object/public/CMIAA_2025_Gallery/CMIAA_2025_Gallery/' +
-        filename // Holds the URL of the loaded image
+    const imageUrl = url_prefix + filename // Holds the URL of the loaded image
 
     import { onMount } from 'svelte'
 
-    let isFullscreen = false
+    let isFullscreen = $state(false)
 
     function toggleFullscreen() {
         isFullscreen = !isFullscreen
