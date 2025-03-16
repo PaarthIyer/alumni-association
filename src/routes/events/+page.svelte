@@ -1,11 +1,8 @@
 <script>
-    import Navbar from '$lib/components/Navbar.svelte'
     import { formatDate } from '$lib/utils/dateUtil'
     let { data } = $props()
     const { upcoming_events, past_events } = data
 </script>
-
-<Navbar transparent={false} />
 
 <div class="bg-bg mx-auto max-w-6xl px-5 pt-5 pb-10">
     <div class=" text-primary font-ubuntu text-center text-6xl font-bold sm:text-6xl md:text-7xl">

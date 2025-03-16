@@ -2,7 +2,7 @@
     let { data } = $props()
 </script>
 
-<article class="prose mx-auto mb-16">
+<article class="prose mx-auto mt-8 mb-16">
     <!-- Title -->
     <hgroup class="flex flex-col items-center">
         <h1 class="">{data.meta.title}</h1>
