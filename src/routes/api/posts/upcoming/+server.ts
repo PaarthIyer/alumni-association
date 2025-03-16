@@ -1,7 +1,7 @@
 import { json } from '@sveltejs/kit'
 
 async function getPosts() {
-    let posts: Post[] = []
+    let posts: EventListing[] = []
 
     const paths = import.meta.glob('/src/lib/posts/events/upcoming/*.md', { eager: true })
 
@@ -10,8 +10,8 @@ async function getPosts() {
         const slug = path.split('/').at(-1)?.replace('.md', '')
 
         if (file && typeof file === 'object' && 'metadata' in file && slug) {
-            const metadata = file.metadata as Omit<Post, 'slug'>
-            const post = { ...metadata, slug } satisfies Post
+            const metadata = file.metadata as Omit<EventListing, 'slug'>
+            const post = { ...metadata, slug } satisfies EventListing
             if (post.published) {
                 posts.push(post)
             }
