@@ -1,5 +1,6 @@
 <script>
     import Navbar from '$lib/components/Navbar.svelte'
+    let { data } = $props()
 </script>
 
 <Navbar transparent={false} />
@@ -8,4 +9,10 @@
     <div class=" text-primary font-ubuntu text-center text-6xl font-bold sm:text-6xl md:text-7xl">
         Events
     </div>
+
+    {#each data.posts as post}
+        {post.title}
+        <br />
+        {post.slug}
+    {/each}
 </div>
