@@ -2,18 +2,21 @@
     import HomeIcon from './HomeIcon.svelte'
 
     let menuOpen = $state(false)
+    let { transparent = true } = $props()
 </script>
 
-<div class="absolute w-full text-white">
-    <div class=" z-10 flex w-full bg-black/45 px-2 py-2 tracking-wider md:px-6">
-        <div class="flex-1">
+<div class="{transparent ? 'absolute bg-black/45' : 'bg-primary'}  w-full text-white">
+    <div class=" z-10 mx-auto flex w-full max-w-6xl px-2 py-2 tracking-wider md:px-6">
+        <a class="flex-1" href="/">
             <HomeIcon
                 cls="hover:cursor-pointer fill-white hover:fill-blue-600 h-7 sm:h-9 m-2 transition-all duration-150"
             />
-        </div>
+        </a>
         <!-- desktop screen -->
         <div
-            class="*:link *:hover:border-primary hidden items-center *:my-1 *:mr-1 *:ml-4 *:px-1 *:py-1 *:font-semibold *:no-underline *:transition-all *:duration-150 *:hover:text-blue-600 sm:flex"
+            class="*:link *:hover:border-primary hidden items-center *:my-1 *:mr-1 *:ml-4 *:px-1 *:py-1 *:font-semibold *:no-underline *:transition-all *:duration-150 {transparent
+                ? '*:hover:text-blue-600'
+                : '*:hover:text-accent'} sm:flex"
         >
             <a href="/">Home</a>
             <a href="/events">Events</a>
@@ -52,24 +55,13 @@
     <!-- smaller screen menu -->
     <div
         class="*:link *:hover:text-primary -z-10 flex w-full origin-top scale-y-0 flex-col items-center
-            overflow-hidden bg-black/45 transition-all duration-300 *:my-2 *:font-semibold *:no-underline *:focus:text-blue-600 sm:hidden {menuOpen
+            overflow-hidden transition-all duration-300 *:font-semibold *:no-underline *:focus:text-blue-600 sm:hidden {menuOpen
             ? ' scale-y-100'
-            : ''}"
+            : 'h-0'}"
     >
-        <a href="/">Home</a>
-        <a href="/events">Events</a>
-        <a href="/gallery">Gallery</a>
-        <a class="mb-5" href="/alumni">Alumni Directory</a>
+        <a class="my-2" href="/">Home</a>
+        <a class="my-2" href="/events">Events</a>
+        <a class="my-2" href="/gallery">Gallery</a>
+        <a class="mb-7" href="/alumni">Alumni Directory</a>
     </div>
-    <!-- <div
-        class="{menuOpen
-            ? ''
-            : 'origin-top scale-y-0'} *:link *:hover:text-primary flex w-full flex-col items-center bg-black/45 transition-all
-            duration-300 *:my-2 *:font-semibold *:no-underline *:focus:text-blue-600 sm:hidden"
-    >
-        <a href="/">Home</a>
-        <a href="/events">Events</a>
-        <a href="/contact">Contact Us</a>
-        <a class="mb-5" href="/alumni">Alumni Directory</a>
-    </div> -->
 </div>
