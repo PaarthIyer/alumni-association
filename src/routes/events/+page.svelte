@@ -24,6 +24,7 @@
 
     <div
         class=" text-primary font-ubuntu my-6 text-center text-4xl font-bold sm:text-5xl md:text-left md:text-5xl"
+        id="past"
     >
         Past
     </div>

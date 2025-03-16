@@ -1,8 +1,8 @@
 <script>
-    import EventListing from './EventListing.svelte'
-    import events from './UpcomingEvents.json'
+    import EventCarouselItem from './EventCarouselItem.svelte'
 
     let activeIndex = $state(0)
+    let { events } = $props()
 </script>
 
 {#if events.length == 0}
@@ -11,8 +11,11 @@
     >
         Nothing to see here
     </div>
-{:else if events.length == 1}
-    <EventListing {...events[0]}></EventListing>
+{:else if events.length == 1}<div class="flex w-full flex-col">
+        <div class="mx-auto">
+            <EventCarouselItem {...events[0]}></EventCarouselItem>
+        </div>
+    </div>
 {:else}
     <div class="flex w-full flex-col">
         <div class="relative z-0 mx-auto">
@@ -22,7 +25,7 @@
                         ? 'appear block opacity-100'
                         : 'vanish hidden opacity-0'} transition-all duration-200"
                 >
-                    <EventListing {...event}></EventListing>
+                    <EventCarouselItem {...event}></EventCarouselItem>
                 </div>
             {/each}
         </div>
