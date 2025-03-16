@@ -8,15 +8,15 @@
     --font-montserrat: Montserrat, sans-serif;
     --font-ubuntu: Ubuntu, sans-serif;
     --font-body: 'Open Sans', sans-serif;
-    --color-text:#101318;
-    --color-bg-dark:#f3f5f9;
-    --color-bg:#f8f8fa;
-    --color-primary:#003eaa;
-    --color-secondary:#97b1dd;
-    --color-accent:#608cd9;
+    --color-text: #101318;
+    --color-bg-dark: #f3f5f9;
+    --color-bg: #f8f8fa;
+    --color-primary: #003eaa;
+    --color-secondary: #97b1dd;
+    --color-accent: #608cd9;
 }
 
 html {
     color: var(--color-text);
     background-color: var(--color-bg-dark);
-  }
+}
