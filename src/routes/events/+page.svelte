@@ -5,7 +5,9 @@
 </script>
 
 <div class="bg-bg mx-auto max-w-6xl px-5 pt-5 pb-10">
-    <div class=" text-primary font-ubuntu text-center text-6xl font-bold sm:text-6xl md:text-7xl">
+    <div
+        class=" text-primary font-ubuntu text-center text-6xl font-bold sm:text-6xl md:text-7xl"
+    >
         Events
     </div>
 
@@ -37,7 +39,9 @@
             class="border-secondary/20 border-b-2 px-2 py-6 transition-all duration-200 hover:bg-black/10 md:p-5"
         >
             {#if post.comment}
-                <div class="text-accent pb-1 text-xl font-semibold sm:text-2xl md:text-3xl">
+                <div
+                    class="text-accent pb-1 text-xl font-semibold sm:text-2xl md:text-3xl"
+                >
                     {post.comment}
                 </div>
             {/if}
@@ -45,12 +49,28 @@
                 {post.title}
             </div>
             <div class="py-2 font-semibold md:text-xl">
-                {post.presenter} | <span class="font-normal">{formatDate(post.date)}</span>
+                {#if post.presenter}
+                    {post.presenter} |
+                {/if} <span class="font-normal">{formatDate(post.date)}</span>
             </div>
-            <div class="flex py-3 font-medium md:text-lg">
-                <img src="icons/venue-ico.svg" alt="venue" class="w-10 px-2" />{post.location}
-                <img src="icons/time-ico.svg" alt="time" class="w-10 pr-2 pl-3" />{post.time}
-            </div>
+            {#if post.time || post.location}
+                <div class="flex py-3 font-medium md:text-lg">
+                    {#if post.location}
+                        <img
+                            src="icons/venue-ico.svg"
+                            alt="venue"
+                            class="w-10 px-2"
+                        />{post.location}
+                    {/if}
+                    {#if post.time}
+                        <img
+                            src="icons/time-ico.svg"
+                            alt="time"
+                            class="w-10 pr-2 pl-3"
+                        />{post.time}
+                    {/if}
+                </div>
+            {/if}
             {#if post.description}
                 <div class="text-base md:text-lg">
                     {post.description}
