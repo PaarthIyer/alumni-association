@@ -3,14 +3,11 @@ comment: 'The first distinguished CMIAA lecture'
 title: 'GenAI and entrepreneurship - how the world of demand is changing'
 description: 'GenAI is reshaping the conversation in every board room. It is revolutionising entrepreneurship by reshaping the economy of demand. With AI driven innovation, businesses are anticipating a tectonic shift in the way they work. Even industries as traditional as cement manufacturing or newspaper printing are reimagining business. How can you grab that opportunity as an entrepreneur?'
 date: '2024-04-06'
-image: /cmi-front.png
 location: 'Online'
 time: '5 PM'
 presenter: 'Ujjaini Mitra'
 published: true
 ---
-
-## Contents
 
 ## Intro
 

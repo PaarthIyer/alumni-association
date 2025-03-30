@@ -6,12 +6,13 @@ import { mdsvex } from 'mdsvex'
 import remarkUnwrapImages from 'rehype-unwrap-images'
 import remarkToc from 'remark-toc'
 import rehypeSlug from 'rehype-slug'
+import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
     extensions: ['.md', '.mdsvex'],
-    remarkPlugins: [remarkUnwrapImages, [remarkToc, { tight: true }]],
-    rehypePlugins: [rehypeSlug]
+    remarkPlugins: [remarkUnwrapImages],
+    rehypePlugins: [rehypeAutolinkHeadings, rehypeSlug]
 }
 
 /** @type {import('@sveltejs/kit').Config} */
