@@ -2,8 +2,17 @@
     "jan_2025_meet": {
         "name": "jan_2025_meet",
         "title": "CMIAA 2025 January Meet",
-        "gallery": "CMIAA_2025_Gallery",
+        "gallery": "cmiaa_2025",
+        "bucket_name": "cmiaa",
         "upload_date": "2025-01-23",
-        "image_link_prefix": "https://jjsxgilfjuombykmbdxj.supabase.co/storage/v1/object/public/CMIAA_2025_Gallery/CMIAA_2025_Gallery/"
+        "image_link_prefix": "https://jjsxgilfjuombykmbdxj.supabase.co/storage/v1/object/public/"
+    },
+    "jan_2024_meet": {
+        "name": "jan_2024_meet",
+        "title": "CMIAA 2024 January Meet",
+        "gallery": "cmiaa_2024",
+        "bucket_name": "cmiaa",
+        "upload_date": "2024-01-20",
+        "image_link_prefix": "https://jjsxgilfjuombykmbdxj.supabase.co/storage/v1/object/public/"
     }
 }
