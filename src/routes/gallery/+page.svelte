@@ -2,7 +2,9 @@
     import { formatDate } from '$lib/utils/dateUtil'
     import galleriesData from './galleries.json'
     let gallery: GalleryItem[] = Object.values(galleriesData).sort(
-        (a, b) => new Date(b.upload_date).getTime() - new Date(a.upload_date).getTime()
+        (a, b) =>
+            new Date(b.upload_date).getTime() -
+            new Date(a.upload_date).getTime()
     )
     type GalleryItem = {
         name: string

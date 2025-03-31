@@ -3,7 +3,9 @@ import type { ServerLoadEvent } from '@sveltejs/kit'
 
 export const load = async ({ params }: ServerLoadEvent) => {
     try {
-        const post = await import(`../../../lib/posts/events/upcoming/${params.slug}.md`)
+        const post = await import(
+            `../../../lib/posts/events/upcoming/${params.slug}.md`
+        )
         console.log('Trying to fetch', params.slug)
 
         return {
@@ -12,7 +14,9 @@ export const load = async ({ params }: ServerLoadEvent) => {
         }
     } catch (e1) {
         try {
-            const post = await import(`../../../lib/posts/events/past/${params.slug}.md`)
+            const post = await import(
+                `../../../lib/posts/events/past/${params.slug}.md`
+            )
             console.log('Trying to fetch', params.slug)
 
             return {

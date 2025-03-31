@@ -5,7 +5,11 @@
     let { transparent = true, spread = false } = $props()
 </script>
 
-<div class="{transparent ? 'absolute bg-black/45' : 'bg-primary'}  w-full text-white">
+<div
+    class="{transparent
+        ? 'absolute bg-black/45'
+        : 'bg-primary'}  w-full text-white"
+>
     <div
         class=" z-10 mx-auto flex w-full {!spread
             ? 'max-w-6xl'
@@ -25,7 +29,9 @@
             <a href="/">Home</a>
             <a href="/events">Events</a>
             <a href="/gallery">Gallery</a>
-            <a class="border-text-white border-2 px-4" href="/alumni">Alumni Directory</a>
+            <a class="border-text-white border-2 px-4" href="/alumni"
+                >Alumni Directory</a
+            >
         </div>
         <!-- smaller screens -->
         <div class="m-2 items-center sm:hidden">
@@ -41,15 +47,21 @@
                     style="stroke-linecap: round;"
                 >
                     <path
-                        d="M{menuOpen ? '50 40' : '40 15'} L{menuOpen ? 75 : 90} 15 "
+                        d="M{menuOpen ? '50 40' : '40 15'} L{menuOpen
+                            ? 75
+                            : 90} 15 "
                         class="transition-all duration-300"
                     />
                     <path
-                        d="M{menuOpen ? '25 15' : '10 40'} L{menuOpen ? '75 65' : '90 40'}"
+                        d="M{menuOpen ? '25 15' : '10 40'} L{menuOpen
+                            ? '75 65'
+                            : '90 40'}"
                         class="transition-all duration-300"
                     />
                     <path
-                        d="M{menuOpen ? '50 40' : '60 65'} L{menuOpen ? '25' : '10'} 65 "
+                        d="M{menuOpen ? '50 40' : '60 65'} L{menuOpen
+                            ? '25'
+                            : '10'} 65 "
                         class="transition-all duration-300"
                     />
                 </svg>

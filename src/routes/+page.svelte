@@ -34,12 +34,14 @@
             <div
                 class="row-start-2 content-center p-1 text-base sm:text-lg md:col-span-3 md:row-auto"
             >
-                The Chennai Mathematical Institute Alumni Association (CMIAA), established on
-                November 15, 2006, serves as a vibrant community connecting graduates of the Chennai
-                Mathematical Institute (CMI). Our mission is to foster a strong network among
-                alumni, facilitate collaboration, and support the institute's growth. We organize
-                annual meetings each January and informal gatherings over the year, providing
-                platforms for alumni to engage with current students and faculty.
+                The Chennai Mathematical Institute Alumni Association (CMIAA),
+                established on November 15, 2006, serves as a vibrant community
+                connecting graduates of the Chennai Mathematical Institute
+                (CMI). Our mission is to foster a strong network among alumni,
+                facilitate collaboration, and support the institute's growth. We
+                organize annual meetings each January and informal gatherings
+                over the year, providing platforms for alumni to engage with
+                current students and faculty.
             </div>
             <div
                 class="row-start-1 mb-6 min-h-64 w-full bg-fuchsia-400 p-2 md:col-span-2 md:row-auto md:mb-0"
@@ -51,7 +53,9 @@
         <div
             class=" text-primary font-ubuntu mb-5 text-center text-6xl font-bold sm:text-6xl md:mb-8 md:text-7xl"
         >
-            <a href="/events" class="transition-all duration-200 hover:tracking-wider"
+            <a
+                href="/events"
+                class="transition-all duration-200 hover:tracking-wider"
                 >Events<span class="text-2xl md:text-3xl">#</span></a
             >
         </div>
@@ -84,7 +88,8 @@
 <style>
     .bg-image {
         background-image:
-            linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url('/cmi-front.png');
+            linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0)),
+            url('/cmi-front.png');
         background-color: rgb(0, 0, 0);
 
         background-repeat: no-repeat;

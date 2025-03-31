@@ -3,7 +3,9 @@ import { json } from '@sveltejs/kit'
 async function getPosts() {
     let posts: EventListing[] = []
 
-    const paths = import.meta.glob('/src/lib/posts/events/past/*.md', { eager: true })
+    const paths = import.meta.glob('/src/lib/posts/events/past/*.md', {
+        eager: true
+    })
 
     for (const path in paths) {
         const file = paths[path]
@@ -19,7 +21,8 @@ async function getPosts() {
     }
 
     posts = posts.sort(
-        (first, second) => new Date(second.date).getTime() - new Date(first.date).getTime()
+        (first, second) =>
+            new Date(second.date).getTime() - new Date(first.date).getTime()
     )
 
     return posts
