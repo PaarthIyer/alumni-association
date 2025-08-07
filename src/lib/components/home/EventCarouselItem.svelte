@@ -8,6 +8,8 @@
         time = '',
         description = ''
     } = $props()
+
+    import { formatDate } from '$lib/utils/dateUtil'
 </script>
 
 <div class="my-5 max-w-3xl p-5 md:w-3xl">
@@ -22,7 +24,7 @@
     <div class="my-2 font-semibold md:text-xl">
         {#if presenter}
             {presenter} |
-        {/if} <span class="font-normal">{date}</span>
+        {/if} <span class="font-normal">{formatDate(date)}</span>
     </div>
     <div class="my-3 flex font-medium md:text-lg">
         {#if location}
